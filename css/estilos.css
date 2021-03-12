@@ -1,0 +1,20 @@
+.letra{
+    font-family: 'Comfortaa', cursive;
+}
+
+.enlace{
+    display: inline-block;
+    background: purple;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.enlace:hover{
+    background: coral
+}
+
+nav{
+    background: palevioletred;
+    padding: 10px;
+}
