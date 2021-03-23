@@ -341,3 +341,33 @@ header{
                  0 30px 30px rgba(0, 0, 0, .3);
   }
 }
+
+/*CSS GRID*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: jamon; }
+.item7 { grid-area: queso; }
+
+.grid-container {
+  display:grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main right right '
+    'queso footer footer footer right right'
+    'queso jamon jamon jamon right right '
+    'queso jamon jamon jamon right right';
+  grid-gap: 10px;
+  background-color: #fc8de9;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(89, 97, 133, 0.8);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 30px;
+}
+
